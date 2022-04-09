@@ -1,0 +1,10 @@
+CRITICAL - 2022-03-14 07:13:36 --> Invalid file: layout/post_layout.php
+#0 D:\xampp\htdocs\pemograman6\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/post_lay...')
+#1 D:\xampp\htdocs\pemograman6\system\View\View.php(226): CodeIgniter\View\View->render('layout/post_lay...', Array, true)
+#2 D:\xampp\htdocs\pemograman6\system\Common.php(1089): CodeIgniter\View\View->render('news', Array, true)
+#3 D:\xampp\htdocs\pemograman6\app\Controllers\News.php(15): view('news', Array)
+#4 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(825): App\Controllers\News->index()
+#5 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#6 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

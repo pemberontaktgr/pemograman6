@@ -1,0 +1,58 @@
+CRITICAL - 2022-04-07 10:42:30 --> Invalid file: edit_view.php
+#0 D:\xampp\htdocs\pemograman6\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_view.php')
+#1 D:\xampp\htdocs\pemograman6\system\Common.php(1089): CodeIgniter\View\View->render('edit_view', Array, true)
+#2 D:\xampp\htdocs\pemograman6\app\Controllers\Barang.php(52): view('edit_view', Array)
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(825): App\Controllers\Barang->edit('1')
+#4 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#5 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-07 10:46:33 --> syntax error, unexpected token "<", expecting "function" or "const"
+#0 D:\xampp\htdocs\pemograman6\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/barang')
+#1 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/barang')
+#2 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 10:46:36 --> syntax error, unexpected token "<", expecting "function" or "const"
+#0 D:\xampp\htdocs\pemograman6\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/barang')
+#1 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/barang')
+#2 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 10:55:07 --> syntax error, unexpected token "}"
+#0 D:\xampp\htdocs\pemograman6\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/barang')
+#1 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/barang')
+#2 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 10:56:15 --> syntax error, unexpected token "}"
+#0 D:\xampp\htdocs\pemograman6\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/barang/tambah')
+#1 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/barang/tambah')
+#2 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 11:14:04 --> Unclosed '{' on line 9
+#0 D:\xampp\htdocs\pemograman6\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/barang')
+#1 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/barang')
+#2 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 11:14:09 --> Unclosed '{' on line 9
+#0 D:\xampp\htdocs\pemograman6\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/barang')
+#1 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/barang')
+#2 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 11:14:11 --> Unclosed '{' on line 9
+#0 D:\xampp\htdocs\pemograman6\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('/barang')
+#1 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('/barang')
+#2 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\pemograman6\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\pemograman6\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
