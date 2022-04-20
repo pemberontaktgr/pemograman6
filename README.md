@@ -11,7 +11,7 @@
 Clone atau download repositori ini
 
 ```
-git clone https://github.com/Anggasayogo/uas_perog_6_ci.git
+git clone https://github.com/pemberontaktgr/pemograman6.git
 ```
 
 install dependesi terlebih dahulu menggunakan perintah
@@ -21,7 +21,7 @@ composer install
 ```
 
 ```
-create db dan import db yang sudah dilampirkan di root project
+create db dan import db yang sudah dilampirkan di app/Database project
 ```
 
 lalu untuk mencobanya kamu bisa menjalankan
@@ -33,4 +33,4 @@ php spark serve
 atau kamu bisa taroh project ini ke htdocs xampp kamu lalu kamu akses url : http://localhost/namaproject
 
 
-@anggamaulana20222
+@vicky_oka_w
