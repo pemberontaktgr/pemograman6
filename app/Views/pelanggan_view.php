@@ -1,6 +1,8 @@
 <div class="container pt-5">
     <a href="<?= base_url('barang'); ?>" class="btn btn-info mb-2">Data Barang</a>
     <a href="<?= base_url('pelanggan'); ?>" class="btn btn-info mb-2">Data Pelanggan</a>
+    <a href="<?= base_url('user'); ?>" class="btn btn-info mb-2">Data User</a>
+    <a href="<?= base_url('level'); ?>" class="btn btn-info mb-2">Data Level</a>
     <div class="card">
         <div class="card-header bg-info text-white">
             <h4 class="card-title">Data Pelanggan</h4>

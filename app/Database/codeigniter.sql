@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Apr 2022 pada 00.36
+-- Waktu pembuatan: 20 Apr 2022 pada 09.41
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.1
 
@@ -34,6 +34,33 @@ CREATE TABLE `barang` (
   `harga_beli` int(11) NOT NULL,
   `harga_jual` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `barang`
+--
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `qty`, `harga_beli`, `harga_jual`) VALUES
+(10, 'Vicky oka widiantara', 15, 15151, 14254464);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `level`
+--
+
+CREATE TABLE `level` (
+  `id_level` int(50) NOT NULL,
+  `nama_level` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `level`
+--
+
+INSERT INTO `level` (`id_level`, `nama_level`) VALUES
+(2, 'Asst Manager'),
+(3, 'Manager'),
+(4, 'Supervisor');
 
 -- --------------------------------------------------------
 
@@ -86,6 +113,36 @@ CREATE TABLE `pelanggan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data untuk tabel `pelanggan`
+--
+
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `no_telpon`, `status`) VALUES
+(5, 'vicky oka widiantara', '0895348811428', 'aktif baru');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `user`
+--
+
+CREATE TABLE `user` (
+  `id_user` int(50) NOT NULL,
+  `nama_user` varchar(50) NOT NULL,
+  `id_level` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `user`
+--
+
+INSERT INTO `user` (`id_user`, `nama_user`, `id_level`) VALUES
+(2, 'Vicky oka widiantara', 'Manager'),
+(4, 'Oka w', 'supervisor'),
+(5, 'Gunanto', '2'),
+(6, 'Vicky oka widiantara', '3'),
+(7, 'suneo', '4');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -94,6 +151,12 @@ CREATE TABLE `pelanggan` (
 --
 ALTER TABLE `barang`
   ADD PRIMARY KEY (`id_barang`);
+
+--
+-- Indeks untuk tabel `level`
+--
+ALTER TABLE `level`
+  ADD PRIMARY KEY (`id_level`);
 
 --
 -- Indeks untuk tabel `migrations`
@@ -114,6 +177,12 @@ ALTER TABLE `pelanggan`
   ADD PRIMARY KEY (`id_pelanggan`);
 
 --
+-- Indeks untuk tabel `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id_user`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -121,7 +190,13 @@ ALTER TABLE `pelanggan`
 -- AUTO_INCREMENT untuk tabel `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT untuk tabel `level`
+--
+ALTER TABLE `level`
+  MODIFY `id_level` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`
@@ -139,7 +214,13 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT untuk tabel `user`
+--
+ALTER TABLE `user`
+  MODIFY `id_user` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

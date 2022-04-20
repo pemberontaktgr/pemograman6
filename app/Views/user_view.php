@@ -5,34 +5,31 @@
     <a href="<?= base_url('level'); ?>" class="btn btn-info mb-2">Data Level</a>
     <div class="card">
         <div class="card-header bg-info text-white">
-            <h4 class="card-title">Data Barang</h4>
+            <h4 class="card-title">Data User</h4>
         </div>
         <div class="card-body">
+            <a href="<?= base_url('user/addUser'); ?>" class="btn btn-success mb-2">Tambah Data</a>
             <div class="table-responsive">
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Nama Barang</th>
-                            <th>Qty</th>
-                            <th>Harga Beli</th>
-                            <th>Harga Jual</th>
-                            <th>Aksi</th>
+                            <th>Nama User</th>
+                            <th>Level</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php $no = 1;
-                        foreach ($getBarang as $isi) { ?>
+                        foreach ($users as $isi) { ?>
                             <tr>
                                 <td><?= $no; ?></td>
-                                <td><?= $isi['nama_barang']; ?></td>
-                                <td><?= $isi['qty']; ?></td>
-                                <td>Rp<?= number_format($isi['harga_beli']); ?>,-</td>
-                                <td>Rp<?= number_format($isi['harga_jual']); ?>,-</td>
+                                <td><?= $isi['nama_user']; ?></td>
+                                <td><?= $isi['nama_level']; ?></td>
                                 <td>
-                                    <a href="<?= base_url('barang/edit/' . $isi['id_barang']); ?>" class="btn btn-success">
+                                    <a href="<?= base_url('user/edit/' . $isi['id_user']); ?>" class="btn btn-success">
                                         Edit</a>
-                                    <a href="<?= base_url('barang/hapus/' . $isi['id_barang']); ?>" onclick="javascript:return confirm('Apakah ingin menghapus data barang ?')" class="btn btn-danger">
+                                    <a href="<?= base_url('user/destroyUser/' . $isi['id_user']); ?>" onclick="javascript:return confirm('Apakah ingin menghapus data User ?')" class="btn btn-danger">
                                         Hapus</a>
 
                                 </td>
@@ -40,7 +37,7 @@
                         <?php $no++;
                         } ?>
                     </tbody>
-                    <a href="<?= base_url('barang/tambah'); ?>" class="btn btn-success mb-2">Tambah Data</a>
+
                 </table>
             </div>
         </div>

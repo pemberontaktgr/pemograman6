@@ -37,16 +37,3 @@ class Barang_model extends Model
         return $builder->delete(['id_barang' => $id]);
     }
 }
-
-class pelanggan_model extends Model
-{
-    protected $table = 'barang';
-    public function getBarang($id = false)
-    {
-        if ($id === false) {
-            return $this->findAll();
-        } else {
-            return $this->getWhere(['id_barang' => $id]);
-        }
-    }
-}
